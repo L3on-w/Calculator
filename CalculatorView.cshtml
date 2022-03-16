@@ -1,0 +1,21 @@
+﻿@model CalculatorLab.Models.CalculatorViewModel
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+
+@{
+   
+}
+<h2>Your Total is: @Model.Total</h2>
+
+<form asp-controller="Calculator" asp-action="Number">
+    <label asp-for="Number1"></label>
+    <input asp-for="Number1" />
+
+    <label>asp-for="Number2"</label>
+    <input asp-for="Number2" />
+
+    <input type ="submit" value="add" name="command" />
+    <input type="submit" value="sub" name="command"/>
+    <input type="submit" value="mul" name="command"/>
+    <input type="submit" value="div" name="command" />
+</form>
+
